@@ -1,22 +1,22 @@
 export const headerElements = [
   {
-    to: "/",
+    to: "wallet",
     label: "Wallet",
   },
   {
-    to: "/Exchange",
+    to: "exchange",
     label: "Exchange",
   },
   {
-    to: "/Explorer",
+    to: "explorer",
     label: "Explorer",
   },
   {
-    to: "/Pay",
+    to: "pay",
     label: "Pay",
   },
   {
-    to: "/Institutional",
+    to: "institutional",
     label: "Institutional",
   },
 ];

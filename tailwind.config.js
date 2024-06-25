@@ -5,7 +5,7 @@ export default {
     extend: {},
     colors: {
       main: "#111d33",
-      nav: "#4287f5",
+      nav: "#CCD2DE",
       navActive: "#FFF",
     },
   },

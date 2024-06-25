@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Header from "../../components/layout/mainLayout/Header";
 
-const Home = () => {
+const Home: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <div className="min-h-screen">
       <Header />
-      <div>Home</div>
+      {children}
     </div>
   );
 };

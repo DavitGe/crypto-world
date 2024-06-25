@@ -1,14 +1,30 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const TopMenuElement: React.FC<{ to: string; children: ReactNode }> = ({
-  to,
-  children,
-}) => {
+const TopMenuElement: React.FC<{
+  to: string;
+  children: ReactNode;
+  active: boolean;
+}> = ({ to, children, active }) => {
   return (
-    <ul className="px-2 py-1">
-      <Link to={to}>{children}</Link>
-    </ul>
+    <li
+      className={`navEl ${
+        active
+          ? "text-navActive after:content-[*] after:border after:border-white after:bottom-[1px]"
+          : "text-nav"
+      }`}
+    >
+      <Link
+        to={to}
+        onClick={(e) => {
+          if (active) {
+            e.preventDefault();
+          }
+        }}
+      >
+        {children}
+      </Link>
+    </li>
   );
 };
 
