@@ -1,8 +1,17 @@
-# React + Vite
+# 🚧 Under Construction 🚧
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This page is currently under construction. Please excuse our mess while we are working hard to bring you new and exciting content.
 
-Currently, two official plugins are available:
+## What's Coming?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Just practicing here. making copy of blockchain.com (using API and aiming for pixel perfect).
+
+## Technologies:
+
+- React
+- Typescript
+- TailwindCSS
+- React Router Dom
+  (maybe with addition of low level libraries)
+
+[You can check progress here]("https://crypto-world-liart.vercel.app/home/wallet")
