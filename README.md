@@ -14,4 +14,4 @@ Just practicing here. making copy of blockchain.com (using API and aiming for pi
 - React Router Dom
   (maybe with addition of low level libraries)
 
-[You can check progress here](https://crypto-world-liart.vercel.app/home/wallet)
+[You can check progress here](https://crypto-world-liart.vercel.app/)
