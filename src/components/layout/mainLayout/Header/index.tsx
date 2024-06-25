@@ -7,7 +7,7 @@ import { headerElements } from "./store/headerElements";
 const Header = () => {
   return (
     <div className="w-full fixed top-0 h-[72px] bg-red-500 bg-main flex justify-center">
-      <Wrapper className="flex items-center h-full">
+      <Wrapper className="flex items-center h-full ">
         <Logo />
         <TopMenu items={headerElements} />
       </Wrapper>

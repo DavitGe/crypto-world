@@ -10,7 +10,7 @@ const TopMenuElement: React.FC<{
     <li
       className={`navEl ${
         active
-          ? "text-navActive after:content-[*] after:border after:border-white after:bottom-[1px]"
+          ? "text-navActive after:content-[''] after:absolute after:border after:border-white after:border-solid after:bottom-[-20px] after:left-0 after:w-full after:h-[1px]"
           : "text-nav"
       }`}
     >
