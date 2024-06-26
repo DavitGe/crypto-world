@@ -1,3 +1,4 @@
+import MoreElements from "./MoreElements";
 import TopMenuElement from "./TopMenuElement";
 import "./index.css";
 const TopMenu = ({
@@ -17,6 +18,9 @@ const TopMenu = ({
             {item.label}
           </TopMenuElement>
         ))}
+        <li>
+          <MoreElements />
+        </li>
       </ul>
     </nav>
   );

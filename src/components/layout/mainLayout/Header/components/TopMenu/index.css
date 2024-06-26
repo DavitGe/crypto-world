@@ -1,3 +1,3 @@
 .navEl {
-  @apply px-2 py-1 text-base hover:text-navActive cursor-pointer relative;
+  @apply px-2 py-1 text-base hover:text-navActive cursor-pointer relative hover:bg-navHoverBg rounded;
 }

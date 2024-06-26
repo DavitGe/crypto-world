@@ -7,6 +7,7 @@ export default {
       main: "#111d33",
       nav: "#CCD2DE",
       navActive: "#FFF",
+      navHoverBg: "#F0F2F71A",
     },
   },
   plugins: [],
