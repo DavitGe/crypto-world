@@ -5,9 +5,12 @@ export default {
     extend: {},
     colors: {
       main: "#111d33",
+      //nav
       nav: "#CCD2DE",
       navActive: "#FFF",
       navHoverBg: "#F0F2F71A",
+      //white
+      white: "#FFF",
     },
   },
   plugins: [],
