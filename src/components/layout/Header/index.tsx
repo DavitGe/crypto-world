@@ -18,10 +18,10 @@ const Header = () => {
           <div className="mr-[1.25rem] ml-auto">
             <Search />
           </div>
-          <Button className="text-white py-[10px] px-[14px] border-[2px]  border-white text-[14px] font-medium	mr-[1.25rem]">
+          <Button className="text-white py-[10px] px-[14px] border-[2px]  border-white text-[14px] font-medium	mr-[1.25rem] hover:opacity-80 transition">
             Log In
           </Button>
-          <Button className="py-[10px] px-[14px] border-[2px]  bg-white text-[14px] font-medium	mr-[1.25rem]">
+          <Button className="py-[10px] px-[14px] border-[2px]  bg-white text-[14px] font-medium	mr-[1.25rem] hover:opacity-80 transition">
             Sign Up
           </Button>
         </div>
