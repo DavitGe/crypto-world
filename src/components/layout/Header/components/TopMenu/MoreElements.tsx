@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosMore } from "react-icons/io";
-import Popover from "../../../../../Popover/Popover";
+import Popover from "../../../../Popover/Popover";
 import { topMenuElements } from "./store/topMenuElements.conf";
 const List: React.FC<{
   title: string;

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Header from "../../components/layout/mainLayout/Header";
+import Header from "../../components/layout/Header";
 
 const Home: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (

@@ -1,8 +1,9 @@
 import React from "react";
-import Logo from "../../../Logo";
-import Wrapper from "../../../Wrapper";
+import Logo from "../../Logo";
+import Wrapper from "../../Wrapper";
 import TopMenu from "./components/TopMenu";
 import { headerElements } from "./store/headerElements";
+import Search from "./components/Search";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
       <Wrapper className="flex items-center h-full ">
         <Logo />
         <TopMenu items={headerElements} />
+        <Search />
       </Wrapper>
     </div>
   );
