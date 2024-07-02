@@ -7,7 +7,10 @@ const Button: React.FC<ButtonProps> = ({ children, className, ...rest }) => {
   return (
     <button
       {...rest}
-      className={twMerge("py-3 px-7 rounded-[0.5rem]", className)}
+      className={twMerge(
+        "py-3 px-7 rounded-[0.5rem]  hover:opacity-80 ",
+        className
+      )}
     >
       {children}
     </button>
