@@ -7,11 +7,17 @@ const List: React.FC<{
   elements: { label: string; to: string }[];
 }> = ({ title, elements }) => {
   return (
-    <div className="flex flex-col">
-      <h4 className="p-0">{title}</h4>
+    <div className="flex flex-col w-[124px]">
+      <h4 className="p-0 font-semibold text-title text-lg mb-[1.25rem]">
+        {title}
+      </h4>
       <ul className="list-none">
         {elements.map((el, i) => {
-          return <li key={i}>{el.label}</li>;
+          return (
+            <li key={i} className="mb-[1rem] text-desc">
+              {el.label}
+            </li>
+          );
         })}
       </ul>
     </div>
@@ -21,7 +27,7 @@ const MoreElements = () => {
   return (
     <Popover
       content={
-        <div className="flex">
+        <div className="flex gap-[48px]">
           {topMenuElements.map((el, i) => {
             return <List key={i} title={el.title} elements={el.elements} />;
           })}
@@ -29,10 +35,10 @@ const MoreElements = () => {
       }
       position="bottom"
       bodyProps={{
-        className: "p-6 translate-y-[0%]",
+        className: "p-6 translate-y-[4%] bordered-[100px] shadow-2xl",
       }}
     >
-      <div className="navEl text-nav">
+      <div className="navEl text-nav bordered-[100px]">
         <IoIosMore fontSize={22} />
       </div>
     </Popover>

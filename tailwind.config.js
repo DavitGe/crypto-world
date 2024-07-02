@@ -11,6 +11,9 @@ export default {
       navHoverBg: "#F0F2F71A",
       //white
       white: "#FFF",
+      //text colors
+      title: "#121D33",
+      desc: "#677185",
     },
   },
   plugins: [],
