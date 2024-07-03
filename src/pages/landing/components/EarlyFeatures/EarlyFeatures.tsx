@@ -7,8 +7,8 @@ const EarlyFeatures = () => {
   return (
     <div className="w-screen">
       <div className="w-screen h-[570px] bg-home-hero-gradient bg-cover	bg-no-repeat bg-center-bottom flex justify-center">
-        <Wrapper className="flex items-center h-full">
-          <form className="h-min max-w-[46.6875rem]">
+        <Wrapper className="flex items-center h-full w-[1000px] xl:w-[1000px] px-10">
+          <div className="h-min max-w-[46.6875rem]">
             <h3 className="mb-6 text-white font-bold text-5xl	leading-[3.625rem]">
               Be early to the future of finance
             </h3>
@@ -16,11 +16,19 @@ const EarlyFeatures = () => {
               Buy Bitcoin, Ethereum, and other leading cryptocurrencies on a
               platform trusted by millions.
             </p>
-            <div className="flex align-center">
-              <TextInput placeholder="Your Email Address" />
-              <Button type="submit">Sign Up</Button>
-            </div>
-          </form>
+            <form className="flex align-center gap-4">
+              <TextInput
+                placeholder="Your email address"
+                className="w-[355px] py-3 px-4 h-12 rounded-[0.5rem] bg-[rgba(255,255,255,0.1)] text-white"
+              />
+              <Button
+                type="submit"
+                className="py-3 px-[22px] bg-white text-[#0C6CF2]"
+              >
+                Sign Up
+              </Button>
+            </form>
+          </div>
         </Wrapper>
       </div>
     </div>
