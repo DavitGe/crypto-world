@@ -6,7 +6,7 @@ import Button from "../../../../components/Button/Button";
 const EarlyFeatures = () => {
   return (
     <div className="w-screen">
-      <div className="w-screen h-[570px] bg-home-hero-gradient bg-cover	bg-no-repeat bg-center-bottom flex justify-center">
+      <div className="w-screen h-[570px] bg-home-hero-gradient bg-cover	bg-no-repeat bg-right-bottom flex justify-center">
         <Wrapper className="flex items-center h-full w-[1000px] xl:w-[1000px] px-10">
           <div className="h-min max-w-[46.6875rem]">
             <h3 className="mb-6 text-white font-bold text-5xl	leading-[3.625rem]">
