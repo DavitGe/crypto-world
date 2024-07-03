@@ -6,9 +6,6 @@ const LandingPage = () => {
   return (
     <main>
       <EarlyFeatures />
-      <div className="h-screen bg-main">
-        <CurrencyBox />
-      </div>
     </main>
   );
 };

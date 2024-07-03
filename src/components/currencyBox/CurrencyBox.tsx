@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 const CurrencyBox = () => {
   return (
-    <div className="p-5 rounded-lg shadow bg-white max-w-[232px]">
+    <div className="p-5 rounded-lg shadow-lg bg-white max-w-[232px] w-full cursor-pointer">
       <div className="flex w-full justify-between align-top mb-2">
         <img className="h-10 w-10 rounded-full bg-main" alt="pic" />
         <div className="flex gap-2 h-min">

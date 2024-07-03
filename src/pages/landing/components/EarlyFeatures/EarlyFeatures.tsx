@@ -2,12 +2,13 @@ import React from "react";
 import Wrapper from "../../../../components/Wrapper";
 import TextInput from "../../../../components/Inputs/TextInput";
 import Button from "../../../../components/Button/Button";
+import CurrencyBox from "../../../../components/currencyBox/CurrencyBox";
 
 const EarlyFeatures = () => {
   return (
     <div className="w-screen">
       <div className="w-screen h-[570px] bg-home-hero-gradient bg-cover	bg-no-repeat bg-right-bottom flex justify-center">
-        <Wrapper className="flex items-center h-full w-[1000px] xl:w-[1000px] px-10">
+        <Wrapper className="flex items-center h-full w-[1080px] xl:w-[1080px] px-10">
           <div className="h-min max-w-[46.6875rem]">
             <h3 className="mb-6 text-white font-bold text-5xl	leading-[3.625rem]">
               Be early to the future of finance
@@ -30,6 +31,14 @@ const EarlyFeatures = () => {
             </form>
           </div>
         </Wrapper>
+      </div>
+      <div className="relative">
+        <div className="flex justify-between absolute translate-y-[-50%] translate-x-[-50%] left-1/2 w-[1080px] px-10">
+          <CurrencyBox />
+          <CurrencyBox />
+          <CurrencyBox />
+          <CurrencyBox />
+        </div>
       </div>
     </div>
   );
