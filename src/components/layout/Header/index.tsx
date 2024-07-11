@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="w-full sticky top-0 h-[72px] bg-red-500 bg-main flex justify-center border-b border-solid border-b-[#ffffff33]">
+    <div className="w-full sticky top-0 h-[72px] bg-red-500 bg-main flex justify-center border-b border-solid border-b-[#ffffff33] z-30">
       <Wrapper className="flex items-center h-full">
         <Link to="/" className="mr-6">
           <Logo />
