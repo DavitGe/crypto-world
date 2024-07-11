@@ -9,7 +9,7 @@ const Wrapper: React.FC<WrapperProps> = ({ children, className, ...rest }) => {
   return (
     <div
       {...rest}
-      className={twMerge("w-screen xl:w-[1280px] px-4 ", className)}
+      className={twMerge("w-screen xl:w-[calc(1304px)] px-4 ", className)}
     >
       {children}
     </div>

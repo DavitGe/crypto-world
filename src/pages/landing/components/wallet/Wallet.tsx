@@ -35,7 +35,9 @@ const Wallet = () => {
             desc: "Use dapps, collect NFTs, and unlock the power of web3.",
           },
         ],
+        bgColor: "rgb(247, 245, 255)",
       }}
+      shapeSrc={"/public/assets/landing/shapes/shape-wallet.png"}
     />
   );
 };
