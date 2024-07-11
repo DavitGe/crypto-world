@@ -5,12 +5,37 @@ const Wallet = () => {
   return (
     <Section
       icon={icon}
-      title="Walet"
+      title="Wallet"
       bgImage={"/public/assets/landing/homepage-app-shapes-bg.png"}
       heading="The only crypto wallet you'll ever need"
       bgColor="rgba(239, 236, 254, 0.5)"
       color="#7349f2"
       iconBgColor="#EFECFE"
+      button={{
+        text: "Get Started",
+        color: "#fff",
+        bgColor: "#7349f2",
+      }}
+      list={{
+        data: [
+          {
+            title: "Buy, sell, and swap with ease",
+            desc: "Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.",
+          },
+          {
+            title: "Earn rewards on your crypto",
+            desc: "Get up to 10% in annual rewards by putting your crypto to work.",
+          },
+          {
+            title: "Self-custody your crypto",
+            desc: "Sleep better at night knowing only you can access your founds.",
+          },
+          {
+            title: "Connect to DeFi",
+            desc: "Use dapps, collect NFTs, and unlock the power of web3.",
+          },
+        ],
+      }}
     />
   );
 };
@@ -36,7 +61,7 @@ const icon = (
       opacity="0.9"
       d="M5 1.25C2.92893 1.25 1.25 2.92893 1.25 5V28C1.25 30.0711 2.92893 31.75 5 31.75H15C17.0711 31.75 18.75 30.0711 18.75 28V5C18.75 2.92893 17.0711 1.25 15 1.25H5Z"
       fill="white"
-      stroke="currentColor"
+      stroke="#5322E5"
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
