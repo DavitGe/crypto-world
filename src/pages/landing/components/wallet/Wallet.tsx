@@ -8,7 +8,7 @@ const Wallet = () => {
       title="Walet"
       bgImage={"/public/assets/landing/homepage-app-shapes-bg.png"}
       heading="The only crypto wallet you'll ever need"
-      bgColor="#efecfe80"
+      bgColor="rgba(239, 236, 254, 0.5)"
       color="#7349f2"
       iconBgColor="#EFECFE"
     />

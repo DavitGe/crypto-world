@@ -17,21 +17,33 @@ const Section: React.FC<ISectionProps> = ({
   icon,
   color,
   iconBgColor,
+  title,
+  heading,
 }) => {
   return (
-    <Wrapper>
-      <div className={`w-full bg-[${bgColor}]`}>
-        <div
-          className={`p-4 flex align-center bg-[${iconBgColor}] rounded-[1.25rem] w-min`}
-        >
-          <div>{icon}</div>
-          <span
-            className={`text-[${color}] ml-[10px] text-lg	leading-6 self-center`}
+    <Wrapper className={`"px-10 flex m-auto `}>
+      <section style={{ backgroundColor: bgColor }} className={`w-full`}>
+        <div className="">
+          <div
+            style={{ backgroundColor: iconBgColor }}
+            className={`p-4 flex align-center rounded-[1.25rem] w-min`}
           >
-            Wallet
-          </span>
+            <div>{icon}</div>
+            <span
+              style={{ color }}
+              className={` ml-[10px]  text-lg	leading-6 self-center`}
+            >
+              {title}
+            </span>
+          </div>
+          <h3
+            style={{ color }}
+            className={`max-w-[30.5rem] text-[40px] font-semibold`}
+          >
+            {heading}
+          </h3>
         </div>
-      </div>
+      </section>
     </Wrapper>
   );
 };
