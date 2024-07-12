@@ -21,6 +21,7 @@ interface ISectionProps {
     data: {
       title: string;
       desc: string;
+      img: string;
     }[];
     bgColor: string;
   };
@@ -101,6 +102,7 @@ const Section: React.FC<ISectionProps> = ({
               alt="shape-wallet"
               className="absolute bottom-0 right-0"
             /> */}
+            <img src={list?.data[activeIndex].img} alt="image" />
           </div>
         </div>
       </section>
