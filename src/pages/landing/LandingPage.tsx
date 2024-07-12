@@ -1,14 +1,16 @@
 import React from "react";
 import EarlyFeatures from "./components/EarlyFeatures/EarlyFeatures";
 import CurrencyBox from "../../components/currencyBox/CurrencyBox";
-import Wallet from "./components/wallet/Wallet";
+import { landingConfigs } from "./components/Sections/confs";
+import Section from "../../components/section/Section";
+import Sections from "./components/Sections/Sections";
 
 const LandingPage = () => {
   return (
     <main>
       <EarlyFeatures />
       <div className="mb-32" />
-      <Wallet />
+      <Sections />
     </main>
   );
 };

@@ -1,0 +1,75 @@
+export const walletConf = {
+  title: "Wallet",
+  bgImage: "/public/assets/landing/homepage-app-shapes-bg.png",
+  heading: "The only crypto wallet you'll ever need",
+  bgColor: "rgba(239, 236, 254, 0.5)",
+  color: "#7349f2",
+  iconBgColor: "#EFECFE",
+  button: {
+    text: "Get Started",
+    color: "#fff",
+    bgColor: "#7349f2",
+  },
+  shapeSrc: "/public/assets/landing/shapes/shape-wallet.png",
+  list: {
+    data: [
+      {
+        title: "Buy, sell, and swap with ease",
+        desc: "Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.",
+        img: "/public/assets/landing/lists/wallet/list-wallet-buy.png",
+      },
+      {
+        title: "Earn rewards on your crypto",
+        desc: "Get up to 10% in annual rewards by putting your crypto to work.",
+        img: "/public/assets/landing/lists/wallet/list-wallet-earn.png",
+      },
+      {
+        title: "Self-custody your crypto",
+        desc: "Sleep better at night knowing only you can access your founds.",
+        img: "/public/assets/landing/lists/wallet/list-wallet-recover.png",
+      },
+      {
+        title: "Connect to DeFi",
+        desc: "Use dapps, collect NFTs, and unlock the power of web3.",
+        img: "/public/assets/landing/lists/wallet/list-wallet-connect.png",
+      },
+    ],
+    bgColor: "rgb(247, 245, 255)",
+  },
+  icon: (
+    <svg
+      width="20"
+      height="36"
+      viewBox="0 0 20 36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.36"
+        d="M5 1.25C2.92893 1.25 1.25 2.92893 1.25 5V31C1.25 33.0711 2.92893 34.75 5 34.75H15C17.0711 34.75 18.75 33.0711 18.75 31V5C18.75 2.92893 17.0711 1.25 15 1.25H5Z"
+        fill="#5322E5"
+        stroke="#5322E5"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        opacity="0.9"
+        d="M5 1.25C2.92893 1.25 1.25 2.92893 1.25 5V28C1.25 30.0711 2.92893 31.75 5 31.75H15C17.0711 31.75 18.75 30.0711 18.75 28V5C18.75 2.92893 17.0711 1.25 15 1.25H5Z"
+        fill="white"
+        stroke="#5322E5"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <rect
+        x="8"
+        y="4"
+        width="4"
+        height="1"
+        rx="0.5"
+        fill="currentColor"
+      ></rect>
+    </svg>
+  ),
+};
