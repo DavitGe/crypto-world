@@ -4,7 +4,6 @@ import Button from "../Button/Button";
 import SectionListElement from "./components/SectionListElement";
 
 interface ISectionProps {
-  bgImage: string;
   bgColor: string;
   icon: JSX.Element;
   title: string;
@@ -15,13 +14,13 @@ interface ISectionProps {
   button: {
     text?: string;
     color?: string;
-    bgColor?: string;
   };
   list?: {
     data: {
       title: string;
       desc: string;
       img: string;
+      imgWidth?: number;
     }[];
     bgColor: string;
   };
@@ -38,6 +37,7 @@ const Section: React.FC<ISectionProps> = ({
   button,
   list,
   shapeSrc,
+  reverse,
 }) => {
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
   const changeIndex = useCallback((index: number) => {
@@ -49,11 +49,15 @@ const Section: React.FC<ISectionProps> = ({
         style={{
           backgroundColor: bgColor,
           backgroundImage: `url(${shapeSrc})`,
-          backgroundPosition: "right bottom 2.25rem",
+          backgroundPosition: reverse
+            ? "left bottom 2.25rem"
+            : "right bottom 2.25rem",
+          minHeight: "52.5rem",
+          backgroundSize: "625px",
         }}
         className={`rounded-[1.25rem] max-w-[80rem] w-full bg-no-repeat my-[3.75rem]`}
       >
-        <div className="flex flex-row">
+        <div className={`flex ${reverse ? "flex-row-reverse" : "flex-row"}`}>
           <div className="z-10 relative py-[70px] pl-[140px] w-full">
             <div
               style={{ backgroundColor: iconBgColor }}
@@ -90,19 +94,21 @@ const Section: React.FC<ISectionProps> = ({
               </ul>
             ) : null}
             <Button
-              style={{ backgroundColor: button.bgColor, color: button.color }}
+              style={{ backgroundColor: color, color: button.color }}
               className="mt-[74px]"
             >
               {button.text}
             </Button>
           </div>
           <div className="pl-[80px] relative w-full">
-            {/* <img
-              src={shapeSrc}
-              alt="shape-wallet"
-              className="absolute bottom-0 right-0"
-            /> */}
-            <img src={list?.data[activeIndex].img} alt="image" />
+            <img
+              src={list?.data?.[activeIndex].img}
+              alt="image"
+              style={{
+                width: list?.data?.[activeIndex].imgWidth ?? "auto",
+              }}
+              className="absolute right-0 top-1/2 translate-y-[-50%] max-w-[unset]"
+            />
           </div>
         </div>
       </section>

@@ -1,6 +1,5 @@
 export const walletConf = {
   title: "Wallet",
-  bgImage: "/public/assets/landing/homepage-app-shapes-bg.png",
   heading: "The only crypto wallet you'll ever need",
   bgColor: "rgba(239, 236, 254, 0.5)",
   color: "#7349f2",
@@ -8,7 +7,6 @@ export const walletConf = {
   button: {
     text: "Get Started",
     color: "#fff",
-    bgColor: "#7349f2",
   },
   shapeSrc: "/public/assets/landing/shapes/shape-wallet.png",
   list: {
@@ -17,21 +15,25 @@ export const walletConf = {
         title: "Buy, sell, and swap with ease",
         desc: "Use a card or bank account to buy BTC, ETH, stablecoins, and other assets.",
         img: "/public/assets/landing/lists/wallet/list-wallet-buy.png",
+        imgWidth: 540,
       },
       {
         title: "Earn rewards on your crypto",
         desc: "Get up to 10% in annual rewards by putting your crypto to work.",
         img: "/public/assets/landing/lists/wallet/list-wallet-earn.png",
+        imgWidth: 540,
       },
       {
         title: "Self-custody your crypto",
         desc: "Sleep better at night knowing only you can access your founds.",
         img: "/public/assets/landing/lists/wallet/list-wallet-recover.png",
+        imgWidth: 540,
       },
       {
         title: "Connect to DeFi",
         desc: "Use dapps, collect NFTs, and unlock the power of web3.",
         img: "/public/assets/landing/lists/wallet/list-wallet-connect.png",
+        imgWidth: 540,
       },
     ],
     bgColor: "rgb(247, 245, 255)",
