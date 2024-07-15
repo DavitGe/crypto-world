@@ -21,6 +21,7 @@ interface ISectionProps {
       desc: string;
       img: string;
       imgWidth?: number;
+      overflow?: boolean; //true if image goes outside of borders
     }[];
     bgColor: string;
   };
@@ -58,7 +59,11 @@ const Section: React.FC<ISectionProps> = ({
         className={`rounded-[1.25rem] max-w-[80rem] w-full bg-no-repeat my-[3.75rem]`}
       >
         <div className={`flex ${reverse ? "flex-row-reverse" : "flex-row"}`}>
-          <div className="z-10 relative py-[70px] pl-[140px] w-full">
+          <div
+            className={`z-10 relative py-[70px] w-full ${
+              reverse ? "pr" : "pl"
+            }-[140px]`}
+          >
             <div
               style={{ backgroundColor: iconBgColor }}
               className={`p-4 flex align-center rounded-[1.25rem] w-min mb-5`}
@@ -100,15 +105,29 @@ const Section: React.FC<ISectionProps> = ({
               {button.text}
             </Button>
           </div>
-          <div className="pl-[80px] relative w-full">
-            <img
-              src={list?.data?.[activeIndex].img}
-              alt="image"
-              style={{
-                width: list?.data?.[activeIndex].imgWidth ?? "auto",
-              }}
-              className="absolute right-0 top-1/2 translate-y-[-50%] max-w-[unset]"
-            />
+          <div
+            className={`${
+              reverse ? "pl" : "pr"
+            }-[140px] w-full flex align-center justify-center`}
+          >
+            {list ? (
+              <div className="relative w-full">
+                <img
+                  src={list?.data?.[activeIndex].img}
+                  alt="image"
+                  style={{
+                    width: list?.data?.[activeIndex].imgWidth ?? "auto",
+                  }}
+                  className={`absolute ${
+                    reverse ? "right" : "left"
+                  }-0 top-1/2 translate-y-[-50%] max-w-[unset] ${
+                    list?.data?.[activeIndex]?.overflow
+                      ? "right-0"
+                      : "left-[50%] translate-x-[-50%]"
+                  }`}
+                />
+              </div>
+            ) : null}
           </div>
         </div>
       </section>

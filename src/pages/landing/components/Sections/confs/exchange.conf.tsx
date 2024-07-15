@@ -84,6 +84,7 @@ export const exchangeConf = {
         desc: "5x your position with margin trading.",
         img: "/public/assets/landing/lists/exchange/list-exchange-margin.png",
         imgWidth: 895,
+        overflow: true,
       },
     ],
     bgColor: "#f5fafe",
