@@ -8,7 +8,7 @@ export const exchangeConf = {
     text: "Trade Now",
     color: "#fff",
   },
-  shapeSrc: "/public/assets/landing/shapes/shape-exchange.png",
+  shapeSrc: "/assets/landing/shapes/shape-exchange.png",
   icon: (
     <svg width="137" height="32" fill="none">
       <mask
@@ -64,25 +64,25 @@ export const exchangeConf = {
       {
         title: "Trade in 3 fiat currencies",
         desc: "The Exchange supports USD, EUR, and GBP.",
-        img: "/public/assets/landing/lists/exchange/list-exchange-trade.png",
+        img: "/assets/landing/lists/exchange/list-exchange-trade.png",
         imgWidth: 360,
       },
       {
         title: "A matching engine that can keep up with you",
         desc: "The world's fastest crypto matching engine, built by and for traders.",
-        img: "/public/assets/landing/lists/exchange/list-exchange-matching.png",
+        img: "/assets/landing/lists/exchange/list-exchange-matching.png",
         imgWidth: 560,
       },
       {
         title: "24/7 live chat support",
         desc: "Chat with customer support directly in the exchange, anytime.",
-        img: "/public/assets/landing/lists/exchange/list-exchange-support.png",
+        img: "/assets/landing/lists/exchange/list-exchange-support.png",
         imgWidth: 357,
       },
       {
         title: "Margin trading",
         desc: "5x your position with margin trading.",
-        img: "/public/assets/landing/lists/exchange/list-exchange-margin.png",
+        img: "/assets/landing/lists/exchange/list-exchange-margin.png",
         imgWidth: 895,
         overflow: true,
       },
