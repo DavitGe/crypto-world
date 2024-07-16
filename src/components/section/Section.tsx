@@ -14,6 +14,7 @@ interface ISectionProps {
   button: {
     text?: string;
     color?: string;
+    bgColor?: string;
   };
   list?: {
     data: {
@@ -25,6 +26,7 @@ interface ISectionProps {
     }[];
     bgColor: string;
   };
+  desc?: string;
   shapeSrc: string;
 }
 
@@ -39,6 +41,7 @@ const Section: React.FC<ISectionProps> = ({
   list,
   shapeSrc,
   reverse,
+  desc,
 }) => {
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
   const changeIndex = useCallback((index: number) => {
@@ -58,9 +61,13 @@ const Section: React.FC<ISectionProps> = ({
         }}
         className={`rounded-[1.25rem] max-w-[80rem] w-full bg-no-repeat my-[3.75rem]`}
       >
-        <div className={`flex ${reverse ? "flex-row-reverse" : "flex-row"}`}>
+        <div
+          className={`flex ${
+            reverse ? "flex-row-reverse" : "flex-row"
+          } h-full self-center`}
+        >
           <div
-            className={`z-10 relative py-[70px] w-full ${
+            className={`z-10 relative py-[70px] w-full self-center ${
               reverse ? "pr" : "pl"
             }-[140px]`}
           >
@@ -98,9 +105,13 @@ const Section: React.FC<ISectionProps> = ({
                 })}
               </ul>
             ) : null}
+            {desc?.length ? <span className="text-base	">{desc}</span> : null}
             <Button
-              style={{ backgroundColor: color, color: button.color }}
-              className="mt-[74px]"
+              style={{
+                backgroundColor: button?.bgColor ?? color,
+                color: button.color,
+              }}
+              className="mt-[30px]"
             >
               {button.text}
             </Button>

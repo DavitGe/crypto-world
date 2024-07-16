@@ -2,13 +2,15 @@ export const institutionalConf = {
   title: "Institutional",
   heading: "High-touch crypto solutions for institutions",
   bgColor: "rgb(240, 242, 246)",
-  color: "#677185",
+  color: "#111d33",
   iconBgColor: "rgb(223, 227, 235)",
   button: {
-    text: "Became a client",
+    text: "Become a client",
     color: "#FFF",
+    bgColor: "#677185",
   },
   shapeSrc: "/public/assets/landing/shapes/shape-institutional.png",
+  desc: "Spot OTC, derivatives, structured products, and margin lending.",
   icon: (
     <svg
       fill="none"
