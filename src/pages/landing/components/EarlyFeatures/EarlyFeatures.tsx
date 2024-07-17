@@ -3,6 +3,7 @@ import Wrapper from "../../../../components/Wrapper";
 import TextInput from "../../../../components/Inputs/TextInput";
 import Button from "../../../../components/Button/Button";
 import CurrencyBox from "../../../../components/currencyBox/CurrencyBox";
+import { dummyData } from "../../../../components/currencyBox/currencyBox.tempdata";
 
 const EarlyFeatures = () => {
   return (
@@ -34,10 +35,9 @@ const EarlyFeatures = () => {
       </div>
       <div className="relative">
         <div className="flex justify-between absolute translate-y-[-50%] translate-x-[-50%] left-1/2 w-[1080px] px-10">
-          <CurrencyBox />
-          <CurrencyBox />
-          <CurrencyBox />
-          <CurrencyBox />
+          {dummyData.map((data, index) => (
+            <CurrencyBox key={index} {...data} />
+          ))}
         </div>
       </div>
     </div>
