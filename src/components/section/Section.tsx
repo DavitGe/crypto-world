@@ -117,9 +117,11 @@ const Section: React.FC<ISectionProps> = ({
             </Button>
           </div>
           <div
-            className={`${
-              reverse ? "pl" : "pr"
-            }-[140px] w-full flex align-center justify-center`}
+            style={{
+              paddingLeft: reverse ? "0" : "140px",
+              paddingRight: reverse ? "140px" : "0",
+            }}
+            className={`w-full flex align-center justify-center`}
           >
             {list ? (
               <div className="relative w-full">
