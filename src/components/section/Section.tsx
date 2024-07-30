@@ -67,9 +67,10 @@ const Section: React.FC<ISectionProps> = ({
           } h-full self-center`}
         >
           <div
-            className={`z-10 relative py-[70px] w-full self-center ${
-              reverse ? "pr" : "pl"
-            }-[140px]`}
+            style={
+              reverse ? { paddingRight: "140px" } : { paddingLeft: "140px" }
+            }
+            className={`z-10 relative py-[70px] w-full self-center`}
           >
             <div
               style={{ backgroundColor: iconBgColor }}
